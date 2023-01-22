@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">LPU</div>
+    <!-- navigation menu -->
+    <!-- USING CHECKBOX HACK -->
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776</label>
+      <div class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="services">
+          <a href="#">Services</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="./form.html">Form</a></li>
+            <li><a href="../Game/game.html">Game</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Form -->
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">India</option>
+            <option value="canada">America</option>
+            <option value="usa">Russia</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
